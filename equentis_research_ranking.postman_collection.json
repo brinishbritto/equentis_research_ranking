@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "2c94baaa-df4d-4216-b8a0-5d8aa8bba045",
+		"name": "Equentis Research Ranking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30536751"
+	},
+	"item": [
+		{
+			"name": "Create Lead",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"John Doe\",\n  \"source\": \"Website\",\n  \"additional_info\": \"Interested in Product X\",\n  \"relationship_manager_id\": 2,\n  \"contact_id\": 2,\n  \"contact_message\": \"Contacted via email\",\n  \"current_status\": \"New\",\n  \"status_reason\": \"Waiting for response\",\n  \"priority\": \"Medium\",\n  \"next_follow_up\": \"2024-06-01T10:00:00\",\n  \"converted_at\": \"2024-05-25T08:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/leads",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Leads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/leads",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lead by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/leads/1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"leads",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Lead",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"John Doe\",\n  \"source\": \"Website\",\n  \"additional_info\": \"Interested in Product X\",\n  \"relationship_manager_id\": 2,\n  \"contact_id\": 2,\n  \"contact_message\": \"Contacted via email\",\n  \"current_status\": \"New\",\n  \"status_reason\": \"Waiting for response\",\n  \"priority\": \"Medium\",\n  \"next_follow_up\": \"2024-06-01T10:00:00\",\n  \"converted_at\": \"2024-05-25T08:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/leads/1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"leads",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Lead",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/leads/1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"leads",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,8 @@
+/node_modules
+/build
+.env
+.vscode
+npm-debug.log
+.prettierrc
+.editorconfig
+package-lock.json
